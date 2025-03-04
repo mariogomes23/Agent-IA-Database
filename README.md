@@ -49,6 +49,7 @@ INSERT INTO employees (name, salary, department, gender, date_start_contract) VA
    langchain
    pymysql
    langchain-community
+   langchain-openai
    python-dotenv
    ```
 
