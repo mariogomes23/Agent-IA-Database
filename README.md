@@ -27,3 +27,34 @@ CREATE TABLE employees (
     name VARCHAR(100) NOT NULL,
     salary DECIMAL(10, 2) NOT NULL
 );
+
+```
+3. Dados para popular o Banco de dados:
+```
+INSERT INTO employees (name, salary) VALUES
+('João Silva', 4500.00),
+('Maria Oliveira', 5200.00),
+('Carlos Souza', 3800.00),
+('Ana Costa', 6100.00),
+('Pedro Rocha', 4900.00),
+('Lucia Mendes', 5400.00),
+('Fernando Alves', 4700.00),
+('Patricia Lima', 5800.00),
+('Ricardo Santos', 4200.00),
+('Mariana Gomes', 5300.00);
+
+```
+
+3. requirements.txt:
+   ```
+   streamlit
+   langchain
+   pymysql
+   langchain-community
+   ```
+
+
+4. Install requirements :
+   ```
+   pip install -r requirements.txt
+   ```
