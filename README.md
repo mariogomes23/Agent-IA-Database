@@ -25,23 +25,21 @@ USE employees;
 CREATE TABLE employees (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    salary DECIMAL(10, 2) NOT NULL
+    salary DECIMAL(10, 2) NOT NULL,
+    department VARCHAR(100) NOT NULL,
+    gender VARCHAR(100) NOT NULL,
+    date_start_contract (DATE) NOT NULL
+
 );
 
 ```
 3. Dados para popular o Banco de dados:
 ```
-INSERT INTO employees (name, salary) VALUES
-('João Silva', 4500.00),
-('Maria Oliveira', 5200.00),
-('Carlos Souza', 3800.00),
-('Ana Costa', 6100.00),
-('Pedro Rocha', 4900.00),
-('Lucia Mendes', 5400.00),
-('Fernando Alves', 4700.00),
-('Patricia Lima', 5800.00),
-('Ricardo Santos', 4200.00),
-('Mariana Gomes', 5300.00);
+INSERT INTO employees (name, salary, department, gender, date_start_contract) VALUES
+('Carlos Mateus', 350000, 'TI', 'Masculino', '2021-05-12'),
+('Ana Joaquim', 250000, 'Recursos Humanos', 'Feminino', '2022-01-15'),
+('Joaquim António', 450000, 'Financeiro', 'Masculino', '2020-09-30'),
+('Rosa Maria', 200000, 'Marketing', 'Feminino', '2023-03-10');
 
 ```
 
